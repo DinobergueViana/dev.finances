@@ -10,6 +10,8 @@ Discovery na plataforma.
 - CSS
 - Javascript
 
-### Mais:
+### Conceitos aprendidos:
 
-- uso de localStorage para armazendo dos dados
+- uso de localStorage para armazenamento dos dados no navegador do usuário
+- organização de código;
+- HTML semântico;
