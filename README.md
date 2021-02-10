@@ -13,5 +13,6 @@ Discovery na plataforma.
 ### Conceitos aprendidos:
 
 - uso de localStorage para armazenamento dos dados no navegador do usuário
-- organização de código;
+- estruturação e organização do código;
 - HTML semântico;
+- eventos;
