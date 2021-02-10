@@ -3,6 +3,11 @@ const Modal = {
     // abrir modal
     // adicionar a class active ao modal
     document.querySelector('.modal-overlay').classList.add('active');
+    
+    // limpa os campos do formulário
+    Form.description.value = "";
+    Form.amount.value = "";
+    Form.date.value = "";
   },
   close(){
     // fechar modal
@@ -143,6 +148,7 @@ const Form = {
       date.trim() === ""){
         throw new Error("Por favor, preencha todos os campos")
     }
+    console.log("Não deu erro")
   },
   formatValues(){
     let { description, amount, date } = Form.getValues();
@@ -164,7 +170,6 @@ const Form = {
   },
   submit(event){
     event.preventDefault()
-
     try {
       Form.validateFields();
       const transaction = Form.formatValues();
@@ -174,9 +179,6 @@ const Form = {
     } catch (error) {
       alert(error.message);
     }
-
-    
-    
   }
 }
 

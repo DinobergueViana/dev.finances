@@ -9,3 +9,7 @@ Discovery na plataforma.
 - HTML
 - CSS
 - Javascript
+
+### Mais:
+
+- uso de localStorage para armazendo dos dados
