@@ -1,8 +1,8 @@
 ## dev.finance:heavy_dollar_sign:
 
-Durante a MaratonaDiscorery, promovida pela Rocketseat :rocket:, desenvolvemos uma aplicação web para controle de finanças.
-As aulas foram disponibilizadas semanalmente e tendo como requisito consumir previamente conteúdos específicos da trilha
-Discovery na plataforma.
+Durante a Maratona Discover, promovida pela Rocketseat :rocket:, desenvolvemos uma aplicação web para controle de finanças.
+As aulas foram disponibilizadas semanalmente, tendo como requisito consumir previamente os conteúdos da trilha
+Discover, que é um ambiente de ensino de programação voltado para iniciantes e que está disponível a todos (gratuitamente) na plataforma da Rocket.
 
 ### Tecnologias usadas:
 
