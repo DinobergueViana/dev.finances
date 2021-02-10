@@ -76,7 +76,6 @@ button {
 
 .active {
   opacity: 1;
-  background: var(--green);
 }
 
 button.active:hover {
@@ -86,10 +85,10 @@ button.active:hover {
 
 .disabled {
   opacity: 0.7;
-  cursor: initial;
 }
 
 button.disabled:hover {
+  cursor: initial;
   background: var(--green);
 }
 

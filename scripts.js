@@ -1,13 +1,21 @@
+const saveButton = document.getElementById('save-button');
+const formTransaction = document.getElementById('formTransaction');
+
 const Modal = {
   open(){
     // abrir modal
     // adicionar a class active ao modal
     document.querySelector('.modal-overlay').classList.add('active');
-    
+
     // limpa os campos do formulário
     Form.description.value = "";
     Form.amount.value = "";
     Form.date.value = "";
+
+    // desabilita o botão de salvar
+    saveButton.setAttribute('disabled', 'disabled');
+    saveButton.classList.add('disabled');
+    console.log(saveButton)
   },
   close(){
     // fechar modal
@@ -146,9 +154,14 @@ const Form = {
     if(description.trim() === "" || 
       amount.trim() === "" || 
       date.trim() === ""){
+        saveButton.classList.add('disabled');
         throw new Error("Por favor, preencha todos os campos")
     }
-    console.log("Não deu erro")
+    // habilita o botão enviar
+    saveButton.classList.replace('disabled', 'active')
+    // saveButton.classList.add('active');
+    saveButton.removeAttribute('disabled');
+    console.log(saveButton)
   },
   formatValues(){
     let { description, amount, date } = Form.getValues();
@@ -180,6 +193,14 @@ const Form = {
       alert(error.message);
     }
   }
+}
+
+formTransaction.onchange = () => {
+  Form.validateFields();
+}
+
+formTransaction.onkeyup = () => {
+  Form.validateFields();
 }
 
 const App = {
