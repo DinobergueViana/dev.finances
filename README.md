@@ -10,7 +10,7 @@ Discovery na plataforma.
 - CSS
 - Javascript
 
-### Conceitos aprendidos:
+### Alguns conceitos aprendidos:
 
 - uso de localStorage para armazenamento dos dados no navegador do usuário
 - estruturação e organização do código;
