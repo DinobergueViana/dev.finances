@@ -15,4 +15,4 @@ Discovery na plataforma.
 - uso de localStorage para armazenamento dos dados no navegador do usuário
 - estruturação e organização do código;
 - HTML semântico;
-- eventos;
+- manipulação da DOM via Javascript;
